@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping(value = "/collaborator")
+@RequestMapping(value = "/api/collaborator")
 public class CollaboratorController {
 
     private final CollaboratorService service;
