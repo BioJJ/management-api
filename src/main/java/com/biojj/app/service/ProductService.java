@@ -43,7 +43,7 @@ public class ProductService {
     }
 
     private Product newProduct(ProductDTO obj) {
-        Category category = categoryService.findById(obj.getCategoryId()).get();
+        Category category = categoryService.findById(obj.getCategory().getId()).get();
 
         Product product = new Product();
         if (obj.getId() != null) {
